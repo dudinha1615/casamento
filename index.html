@@ -27,7 +27,6 @@ html, body{
     background:#e9e7df;
 }
 
-/* 📱 FOLHETO */
 .convite{
     width:360px;
     height:620px;
@@ -37,21 +36,16 @@ html, body{
     box-shadow:0 20px 50px rgba(0,0,0,0.30);
 }
 
-/* 🌹 FUNDO */
 .convite::before{
     content:"";
     position:absolute;
     inset:0;
-
-    background:url("download\ \(5\).png") center/cover no-repeat;
-
+    background:url("download (5).png") center/cover no-repeat;
     transform:scale(1.15);
     filter:contrast(1.4) saturate(1.5) brightness(0.95);
-
     z-index:0;
 }
 
-/* CAMADA CLARA */
 .convite::after{
     content:"";
     position:absolute;
@@ -60,30 +54,25 @@ html, body{
     z-index:1;
 }
 
-/* CONTEÚDO */
 .conteudo{
     position:relative;
     z-index:2;
-
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-
     padding:40px;
     color:#2f3b22;
 }
 
-/* D M */
 .kit{
     font-size:50px;
     font-style:italic;
     color:#2f4a1f;
 }
 
-/* FRASE */
 .frase{
     margin-top:10px;
     font-size:11px;
@@ -93,7 +82,6 @@ html, body{
     max-width:280px;
 }
 
-/* NOMES */
 .nomes{
     margin-top:14px;
     font-size:34px;
@@ -101,7 +89,6 @@ html, body{
     color:#2f4a1f;
 }
 
-/* CASAMENTO */
 .texto{
     margin-top:6px;
     font-size:16px;
@@ -109,7 +96,6 @@ html, body{
     color:#2f2f2f;
 }
 
-/* DATA */
 .data{
     margin-top:16px;
     font-size:26px;
@@ -117,16 +103,18 @@ html, body{
     color:#2f4a1f;
 }
 
-/* 📍 LOCAL (MOVIDO PRA DIREITA) */
 .local{
     margin-top:28px;
     text-align:center;
-    transform:translateX(12px) translateY(10px); /* 👉 DIREITA + leve ajuste */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .local h2{
     font-size:18px;
     color:#2f4a1f;
+    margin-bottom:4px;
 }
 
 .local p{
@@ -136,13 +124,11 @@ html, body{
     color:#2f2f2f;
 }
 
-/* 📲 ÍCONES */
 .icones{
     margin-top:26px;
     display:flex;
     justify-content:center;
     gap:10px;
-    transform:translateY(12px);
 }
 
 .icones a{
@@ -172,7 +158,7 @@ html, body{
 
     <div class="conteudo">
 
-        <div class="kit">D M</div>
+        <div class="kit">D|M</div>
 
         <div class="frase">
         “DEUS UNIU NOSSOS CAMINHOS E NÓS,<br>
@@ -188,15 +174,17 @@ html, body{
         <div class="local">
             <h2>LOCAL</h2>
             <p>
-            Recanto Alegria Plena<br>
-            Rua Europa<br>
-            Londrina - PR
+                Recanto Alegria Plena<br>
+                Av. Europa - Bairro Piza<br>
+                Londrina - PR
             </p>
         </div>
 
         <div class="icones">
 
-            <a href="https://maps.google.com">
+            <!-- MAPS FUNCIONANDO -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Recanto%20Alegria%20Plena%20Avenida%20Europa%20Bairro%20Piza%20Londrina%20PR"
+               target="_blank">
                 <i class="fa-solid fa-location-dot"></i>
             </a>
 
