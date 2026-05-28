@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Convite Daniel & Manu</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    width:100%;
+    height:100%;
+    font-family:Georgia, serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e9e7df;
+}
+
+/* 📱 FOLHETO */
+.convite{
+    width:360px;
+    height:620px;
+    position:relative;
+    overflow:hidden;
+    border-radius:28px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.30);
+}
+
+/* 🌹 FUNDO */
+.convite::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:url("download\ \(5\).png") center/cover no-repeat;
+
+    transform:scale(1.15);
+    filter:contrast(1.4) saturate(1.5) brightness(0.95);
+
+    z-index:0;
+}
+
+/* CAMADA CLARA */
+.convite::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.18);
+    z-index:1;
+}
+
+/* CONTEÚDO */
+.conteudo{
+    position:relative;
+    z-index:2;
+
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:40px;
+    color:#2f3b22;
+}
+
+/* D M */
+.kit{
+    font-size:50px;
+    font-style:italic;
+    color:#2f4a1f;
+}
+
+/* FRASE */
+.frase{
+    margin-top:10px;
+    font-size:11px;
+    font-weight:bold;
+    line-height:1.3;
+    color:#2f2f2f;
+    max-width:280px;
+}
+
+/* NOMES */
+.nomes{
+    margin-top:14px;
+    font-size:34px;
+    font-style:italic;
+    color:#2f4a1f;
+}
+
+/* CASAMENTO */
+.texto{
+    margin-top:6px;
+    font-size:16px;
+    font-weight:bold;
+    color:#2f2f2f;
+}
+
+/* DATA */
+.data{
+    margin-top:16px;
+    font-size:26px;
+    font-weight:bold;
+    color:#2f4a1f;
+}
+
+/* 📍 LOCAL (MOVIDO PRA DIREITA) */
+.local{
+    margin-top:28px;
+    text-align:center;
+    transform:translateX(12px) translateY(10px); /* 👉 DIREITA + leve ajuste */
+}
+
+.local h2{
+    font-size:18px;
+    color:#2f4a1f;
+}
+
+.local p{
+    font-size:12px;
+    font-weight:bold;
+    line-height:1.4;
+    color:#2f2f2f;
+}
+
+/* 📲 ÍCONES */
+.icones{
+    margin-top:26px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    transform:translateY(12px);
+}
+
+.icones a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#4f6d2f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:14px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.icones a:hover{
+    transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="convite">
+
+    <div class="conteudo">
+
+        <div class="kit">D M</div>
+
+        <div class="frase">
+        “DEUS UNIU NOSSOS CAMINHOS E NÓS,<br>
+        UNIREMOS NOSSAS VIDAS PARA SEMPRE.”
+        </div>
+
+        <div class="nomes">Daniel & Manu</div>
+
+        <div class="texto">CASAMENTO</div>
+
+        <div class="data">23 DE AGOSTO</div>
+
+        <div class="local">
+            <h2>LOCAL</h2>
+            <p>
+            Recanto Alegria Plena<br>
+            Rua Europa<br>
+            Londrina - PR
+            </p>
+        </div>
+
+        <div class="icones">
+
+            <a href="https://maps.google.com">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+
+            <a href="https://wa.me/5543984420862">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://wa.me/5543984420862?text=Confirmo+presença">
+                <i class="fa-solid fa-check"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
